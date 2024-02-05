@@ -11,12 +11,24 @@ module.exports = {
 		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
+		container: {
+			center: true,
+		},
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-exo_2)', ...defaultTheme.fontFamily.sans],
+				sans: ["var(--font-exo_2)", ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
 	darkMode: "class",
-	plugins: [nextui()],
+	plugins: [
+		nextui({
+			addCommonColors: true,
+			themes: {
+				light: {
+					black: "#000000",
+				},
+			},
+		}),
+	],
 };
