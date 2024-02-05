@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import logoIconBlack from "@/public/logo-icon-black.png";
 import logoTextBlack from "@/public/logo-text-black.png";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 	return (

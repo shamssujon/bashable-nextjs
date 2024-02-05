@@ -1,11 +1,10 @@
-import HeaderBeforeLogin from "@/app/Components/Headers/HeaderBeforeLogin";
 import Footer from "@/app/Components/Footers/Footer";
-import { Button } from "@nextui-org/react";
+import HeaderBeforeLogin from "@/app/Components/Headers/HeaderBeforeLogin";
+import { Button, Link } from "@nextui-org/react";
 import Image from "next/image";
 
-import homeImg from "@/public/home-women.png";
-import homeImg2 from "../public/home-women.png";
 import homeStar from "@/public/home-star.svg";
+import homeImg from "@/public/home-women.png";
 
 export default function Home() {
 	return (
@@ -63,7 +62,11 @@ export default function Home() {
 					</div>
 
 					<div className="">
-						<Button fullWidth className="h-auto bg-black/90 py-3 text-lg font-semibold text-white shadow">
+						<Button
+							as={Link}
+							href={"/signup"}
+							fullWidth
+							className="h-auto bg-black/90 py-3 text-lg font-semibold text-white shadow">
 							Sign up
 						</Button>
 					</div>

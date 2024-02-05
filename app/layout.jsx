@@ -1,5 +1,5 @@
-import { Providers } from "./providers";
 import { Exo_2 } from "next/font/google";
+import { Providers } from "./providers";
 import "./styles.css";
 
 const exo_2 = Exo_2({
