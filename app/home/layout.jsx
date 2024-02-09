@@ -6,8 +6,9 @@ import Image from "next/image";
 
 export default function FanHomeLayout({ children }) {
 	return (
-		<div className="flex">
-			<div className="sticky top-0 h-screen w-[350px] shrink-0">
+		<div className="flex flex-col lg:flex-row">
+			{/* Sidebar */}
+			<div className="sticky top-0 hidden h-screen w-[350px] shrink-0 lg:block">
 				<div className="flex h-full flex-col gap-10 bg-neutral-100">
 					<div className="flex h-[72px] flex-col justify-center border-b px-6 py-4">
 						<Link href={"/home"} className="flex w-full items-center gap-4 ">
@@ -99,8 +100,9 @@ export default function FanHomeLayout({ children }) {
 			</div>
 
 			<div className="w-full">
-				<div className="sticky top-0 flex h-[72px] items-center justify-between gap-4 border-b bg-white px-6">
-					<div className="mx-auto max-w-screen-sm flex-1">
+				{/* header */}
+				<div className="sticky top-0 z-20 hidden h-[72px] items-center justify-between gap-4 border-b bg-white px-6 lg:flex">
+					<div className="mx-auto max-w-xl flex-1">
 						<Input
 							size=""
 							type="text"
@@ -113,7 +115,7 @@ export default function FanHomeLayout({ children }) {
 						/>
 					</div>
 
-					<div className="flex items-center gap-2">
+					<div className="flex w-[350px] items-center justify-end gap-2">
 						<Button isIconOnly radius="full" className="bg-transparent">
 							<Icon name="message" className="h-6 w-6" />
 						</Button>
@@ -129,7 +131,36 @@ export default function FanHomeLayout({ children }) {
 					</div>
 				</div>
 
-				<div className="p-6">{children}</div>
+				<div className="sticky top-0 z-10 flex items-center gap-5 bg-white px-5 py-3 lg:hidden">
+					<Button isIconOnly className="bg-neutral-100">
+						<Icon name="arrow-left" className="h-6 w-6" />
+					</Button>
+					<h4 className="text-lg font-semibold">Home</h4>
+				</div>
+
+				{/* content */}
+				<div className="p-5 lg:p-6">{children}</div>
+
+				{/* mobile appbar */}
+				<div className="sticky bottom-0 px-3 py-2 lg:hidden">
+					<div className="flex items-center justify-between gap-2 rounded-xl bg-white px-5 py-2.5 shadow-[-2px_-2px_50px_0px_rgba(0,0,0,0.1)]">
+						<Button isIconOnly className="bg-neutral-100">
+							<Icon name="home" className="h-6 w-6" />
+						</Button>
+						<Button isIconOnly className="bg-neutral-100">
+							<Icon name="bell" className="h-6 w-6" />
+						</Button>
+						<Button isIconOnly className="bg-neutral-100">
+							<Icon name="search" className="h-6 w-6" />
+						</Button>
+						<Button isIconOnly className="bg-neutral-100">
+							<Icon name="message" className="h-6 w-6" />
+						</Button>
+						<Button isIconOnly className="bg-transparent">
+							<Avatar radius="lg" src="https://i.pravatar.cc/150?img=36" />
+						</Button>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

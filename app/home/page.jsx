@@ -1,15 +1,139 @@
+// using 'use client' to avoid the 'Error: Unknown element <[object Object]> in collection.' when using the select component from nextUI
+"use client";
+
+import Post from "@/app/Components/Post/Post";
+import { Avatar, Button, Link, Select, SelectItem } from "@nextui-org/react";
+import { Icon } from "../Components/Icons/Icons";
+
+const postData = [
+	{
+		handle: "@kristina",
+		avatar: "https://i.pravatar.cc/150?img=31",
+		img: "https://mighty.tools/mockmind-api/content/human/28.jpg",
+		caption: "💋 Dive Into Month of Scintillating photos and exclusive gifts babe , you will love it...",
+	},
+	{
+		handle: "@juliana",
+		avatar: "https://i.pravatar.cc/150?img=36",
+		img: "https://mighty.tools/mockmind-api/content/human/76.jpg",
+		caption: "Drawings me opinions returned absolute in. Otherwise therefore sex did are unfeeling something.",
+	},
+	{
+		handle: "@Morzina",
+		avatar: "https://i.pravatar.cc/150?img=38",
+		img: "https://mighty.tools/mockmind-api/content/human/8.jpg",
+		caption:
+			"In no impression assistance contrasted. Manners she wishing justice hastily new anxious. At discovery discourse departure objection we.",
+	},
+];
+
+const suggestedProfiles = [
+	{
+		handle: "@wandrille.90",
+		avatar: "https://i.pravatar.cc/150?img=36",
+	},
+	{
+		handle: "@reybaud",
+		avatar: "https://i.pravatar.cc/150?img=31",
+	},
+	{
+		handle: "@aliana53",
+		avatar: "https://i.pravatar.cc/150?img=40",
+	},
+	{
+		handle: "@mamert",
+		avatar: "https://i.pravatar.cc/150?img=41",
+	},
+	{
+		handle: "@amélien.44",
+		avatar: "https://i.pravatar.cc/150?img=42",
+	},
+];
 
 export default function Home() {
 	return (
-		<div className="">
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam architecto aliquid corrupti, asperiores
-			ratione perspiciatis necessitatibus officiis delectus, ab inventore omnis! Impedit minima facilis hic ex
-			quae tempore quod iste provident aspernatur error corporis, perspiciatis cumque illo, iusto ipsa soluta sunt
-			voluptas ab. Deserunt nisi tempore hic eius eligendi voluptates distinctio beatae laudantium labore quidem a
-			aliquid alias soluta, aperiam obcaecati natus ab perspiciatis? Odio accusamus fuga impedit quo aperiam est,
-			dicta assumenda modi et accusantium ab veniam eaque distinctio, veritatis temporibus expedita, quos
-			molestiae rem! Reprehenderit, cum sequi sint qui dolores quos corporis consequatur, soluta labore, ex
-			dolorem expedita.
+		<div className="flex flex-col gap-6 lg:flex-row">
+			<div className="mx-auto max-w-lg 2xl:max-w-xl">
+				<div className="mb-6 text-right">
+					<Select size="sm" variant="bordered" className="md:max-w-40" defaultSelectedKeys="1">
+						<SelectItem key={1} value="most-recent">
+							Most Recent
+						</SelectItem>
+						<SelectItem key={2} value="popular">
+							Popular
+						</SelectItem>
+						<SelectItem key={3} value="popular">
+							Your Feed
+						</SelectItem>
+					</Select>
+				</div>
+				<div className="space-y-6">
+					{postData.map((post, index) => (
+						<Post key={index} postData={post}></Post>
+					))}
+				</div>
+			</div>
+
+			<div className="relative hidden w-[350px] xl:block">
+				<div className="sticky top-24">
+					<div className="">
+						<h6 className="text-sm font-medium text-foreground-500">Suggested Profiles</h6>
+
+						<div className="mt-6 space-y-6">
+							{suggestedProfiles.map((profile) => (
+								<div className="flex items-center justify-between gap-4">
+									<Link href="" className="gap-2 text-sm font-semibold text-black lg:text-base">
+										<Avatar src={profile.avatar} alt="" />
+										<span>{profile.handle}</span>
+									</Link>
+									<div className="flex items-center gap-2">
+										<Button className="bg-neutral-100 font-semibold">Follow</Button>
+										<Button isIconOnly radius="full" className="bg-neutral-100">
+											<Icon name="user-plus" className="h-6 w-6" />
+										</Button>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+
+					<div className="mt-10">
+						<ul className="flex flex-wrap gap-x-1">
+							<li className="before:mr-1 before:content-['\00B7'] first:before:hidden">
+								<Link
+									href=""
+									className="text-sm text-foreground-500 transition hover:text-black hover:underline hover:underline-offset-2">
+									About
+								</Link>
+							</li>
+							<li className="before:mr-1 before:content-['\00B7'] first:before:hidden">
+								<Link
+									href=""
+									className="text-sm text-foreground-500 transition hover:text-black hover:underline hover:underline-offset-2">
+									Help & Support
+								</Link>
+							</li>
+							<li className="before:mr-1 before:content-['\00B7'] first:before:hidden">
+								<Link
+									href=""
+									className="text-sm text-foreground-500 transition hover:text-black hover:underline hover:underline-offset-2">
+									Terms & Conditions
+								</Link>
+							</li>
+							<li className="before:mr-1 before:content-['\00B7'] first:before:hidden">
+								<Link
+									href=""
+									className="text-sm text-foreground-500 transition hover:text-black hover:underline hover:underline-offset-2">
+									Privacy & Safety
+								</Link>
+							</li>
+						</ul>
+						<p className="mt-2 text-sm font-medium text-foreground-500">
+							© 2023 Bashable.art, All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }

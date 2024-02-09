@@ -18,6 +18,13 @@ module.exports = {
 			fontFamily: {
 				sans: ["var(--font-exo_2)", ...defaultTheme.fontFamily.sans],
 			},
+			aspectRatio: {
+				"4/3": "4 / 3",
+				"4/5": "4 / 5",
+				"3/5": "3 / 5",
+				"3/4": "3 / 4",
+				"5/6": "5 / 6",
+			},
 		},
 	},
 	darkMode: "class",
