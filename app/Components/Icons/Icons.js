@@ -87,6 +87,15 @@ const SearchIcon = (props) => (
 		/>
 	</svg>
 );
+const SearchIcon2 = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path
+			fillRule="evenodd"
+			clipRule="evenodd"
+			d="M15.615 14.2a6.916 6.916 0 1 0-1.414 1.415l1.414-1.415Zm.915.7a8.069 8.069 0 1 0-1.63 1.63l.823.823 2.735 3.83a1.953 1.953 0 1 0 2.724-2.725l-3.83-2.735-.822-.822Z"
+		/>
+	</svg>
+);
 const ArrowLeftIcon = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path d="m6.205 12.5 6.295 6.293a.71.71 0 0 0 1.001 0 .705.705 0 0 0 0-.998L7.705 12 13.5 6.206a.706.706 0 1 0-1-1L6.204 11.5a.713.713 0 0 0 0 1Z" />
@@ -117,6 +126,7 @@ const icons = {
 	"ai-image": AiImageIcon,
 	"user-plus": UserPlusIcon,
 	search: SearchIcon,
+	search2: SearchIcon2,
 	"arrow-left": ArrowLeftIcon,
 	heart: HeartIcon,
 	bookmark: BookmarkIcon,
