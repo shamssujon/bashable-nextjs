@@ -18,7 +18,7 @@ export default function Login() {
 					<div className="mb-6">
 						<h4 className="mb-2 text-2xl font-semibold">Forgot your password?</h4>
 						<p className="text-xs text-content4-foreground">
-							Don't worry we will send you a link to your email address to reset password. It's matter of
+							Don&apos;t worry we will send you a link to your email address to reset password. It&apos;s matter of
 							a click for you.
 						</p>
 					</div>
