@@ -1,31 +1,10 @@
 // using 'use client' to avoid the 'Error: Unknown element <[object Object]> in collection.' when using the select component from nextUI
 "use client";
 
+import { Icon } from "@/app/Components/Icons/Icons";
 import Post from "@/app/Components/Post/Post";
+import postData from "@/public/api/post.json";
 import { Avatar, Button, Link, Select, SelectItem } from "@nextui-org/react";
-import { Icon } from "../Components/Icons/Icons";
-
-const postData = [
-	{
-		handle: "@kristina",
-		avatar: "https://i.pravatar.cc/150?img=31",
-		img: "https://mighty.tools/mockmind-api/content/human/28.jpg",
-		caption: "💋 Dive Into Month of Scintillating photos and exclusive gifts babe , you will love it...",
-	},
-	{
-		handle: "@juliana",
-		avatar: "https://i.pravatar.cc/150?img=36",
-		img: "https://mighty.tools/mockmind-api/content/human/76.jpg",
-		caption: "Drawings me opinions returned absolute in. Otherwise therefore sex did are unfeeling something.",
-	},
-	{
-		handle: "@Morzina",
-		avatar: "https://i.pravatar.cc/150?img=38",
-		img: "https://mighty.tools/mockmind-api/content/human/8.jpg",
-		caption:
-			"In no impression assistance contrasted. Manners she wishing justice hastily new anxious. At discovery discourse departure objection we.",
-	},
-];
 
 const suggestedProfiles = [
 	{
@@ -80,14 +59,14 @@ export default function Home() {
 						<h6 className="text-sm font-medium text-foreground-500">Suggested Profiles</h6>
 
 						<div className="mt-6 space-y-6">
-							{suggestedProfiles.map((profile) => (
-								<div className="flex items-center justify-between gap-4">
+							{suggestedProfiles.map((profile, index) => (
+								<div key={index} className="flex items-center justify-between gap-4">
 									<Link href="" className="gap-2 text-sm font-semibold text-black lg:text-base">
 										<Avatar src={profile.avatar} alt="" />
 										<span>{profile.handle}</span>
 									</Link>
 									<div className="flex items-center gap-2">
-										<Button className="bg-neutral-100 font-semibold">Follow</Button>
+										<Button className="bg-neutral-100 font-semibold">Subscribe</Button>
 										<Button isIconOnly radius="full" className="bg-neutral-100">
 											<Icon name="user-plus" className="h-6 w-6" />
 										</Button>

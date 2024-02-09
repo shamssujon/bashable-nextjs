@@ -16,7 +16,7 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ["var(--font-exo_2)", ...defaultTheme.fontFamily.sans],
+				sans: ["var(--font-exo2)", ...defaultTheme.fontFamily.sans],
 			},
 			aspectRatio: {
 				"4/3": "4 / 3",
