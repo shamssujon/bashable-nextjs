@@ -16,8 +16,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={`${exo_2.variable}`}>
-			<body>
+		<html lang="en" className={`${exo_2.variable} h-full`}>
+			<body className="h-full">
 				<Providers>{children}</Providers>
 			</body>
 		</html>
