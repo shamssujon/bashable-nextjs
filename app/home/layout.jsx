@@ -37,7 +37,7 @@ export default function FanHomeLayout({ children }) {
 							</Button>
 							<Button
 								as={Link}
-								href={"/home"}
+								href={"/home/generate-ai-image"}
 								fullWidth
 								startContent={<Icon name="ai-image" className="h-6 w-6" />}
 								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
