@@ -122,7 +122,12 @@ export default function FanHomeLayout({ children }) {
 						<Button isIconOnly radius="full" className="bg-transparent">
 							<Icon name="bell" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly radius="full" className="bg-transparent">
+						<Button
+							as={Link}
+							href={"/home/wallet-and-payments"}
+							isIconOnly
+							radius="full"
+							className="bg-transparent">
 							<Icon name="wallet" className="h-6 w-6" />
 						</Button>
 						<Button isIconOnly radius="full" className="ml-2 bg-transparent">
