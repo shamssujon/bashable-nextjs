@@ -19,7 +19,7 @@ export default function Promotions() {
 					</div>
 					<div className="mt-3 flex flex-wrap items-center justify-between gap-3">
 						<p className="text-sm text-foreground-500 lg:text-base">
-							It's a big milestone for @erica as a …
+							It&apos;s a big milestone for @erica as a …
 						</p>
 					</div>
 				</div>
