@@ -164,38 +164,59 @@ export default function FanHomeLayout({ children }) {
 									/>
 								</DropdownItem>
 
-								<DropdownItem key="profile" startContent={<Icon name="user" className="h-4 w-4" />}>
+								<DropdownItem
+									key="profile"
+									href="/home/profile"
+									startContent={<Icon name="user" className="h-4 w-4" />}>
 									Profile
 								</DropdownItem>
 
-								<DropdownItem key="likes" startContent={<Icon name="heart-alt" className="h-4 w-4" />}>
+								<DropdownItem
+									key="likes"
+									href="/home/my-likes"
+									startContent={<Icon name="heart-alt" className="h-4 w-4" />}>
 									My Likes / Purchased
 								</DropdownItem>
 								<DropdownItem
 									key="creator"
+									href="/home/become-creator"
 									startContent={<Icon name="doller-earn" className="h-4 w-4" />}>
 									Become a creator
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="ai-image" className="h-4 w-4" />}>
+								<DropdownItem
+									key="ai-image"
+									href="/home/generate-ai-image"
+									startContent={<Icon name="ai-image" className="h-4 w-4" />}>
 									Generate AI Images
 								</DropdownItem>
 								<DropdownItem
-									key="creator"
+									key="public-images"
+									href="/home/public-images"
 									startContent={<Icon name="public-access" className="h-4 w-4" />}>
 									Public Images
 								</DropdownItem>
 								<DropdownItem
-									key="creator"
+									key="promotions"
+									href="/home/promotions"
 									startContent={<Icon name="hand-mike" className="h-4 w-4" />}>
 									Promotions
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="wallet" className="h-4 w-4" />}>
+								<DropdownItem
+									key="wallet"
+									href="/home/wallet-and-payments"
+									startContent={<Icon name="wallet" className="h-4 w-4" />}>
 									Wallet & Payment
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="settings" className="h-4 w-4" />}>
+								<DropdownItem
+									key="settings"
+									href="/home/settings"
+									startContent={<Icon name="settings" className="h-4 w-4" />}>
 									Settings
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="logout" className="h-4 w-4" />}>
+								<DropdownItem
+									key="logout"
+									href="/"
+									startContent={<Icon name="logout" className="h-4 w-4" />}>
 									Log out
 								</DropdownItem>
 							</DropdownMenu>
@@ -236,7 +257,10 @@ export default function FanHomeLayout({ children }) {
 								</Button>
 							</DropdownTrigger>
 
-							<DropdownMenu aria-label="Profile Actions" variant="flat">
+							<DropdownMenu
+								aria-label="Profile Actions"
+								variant="flat"
+								itemClasses={{ title: "text-base" }}>
 								<DropdownItem key="avatar">
 									<User
 										name="John Rogers"
@@ -250,38 +274,59 @@ export default function FanHomeLayout({ children }) {
 									/>
 								</DropdownItem>
 
-								<DropdownItem key="profile" startContent={<Icon name="user" className="h-4 w-4" />}>
+								<DropdownItem
+									key="profile"
+									href="/home/profile"
+									startContent={<Icon name="user" className="h-5 w-5" />}>
 									Profile
 								</DropdownItem>
 
-								<DropdownItem key="likes" startContent={<Icon name="heart-alt" className="h-4 w-4" />}>
+								<DropdownItem
+									key="likes"
+									href="/home/my-likes"
+									startContent={<Icon name="heart-alt" className="h-5 w-5" />}>
 									My Likes / Purchased
 								</DropdownItem>
 								<DropdownItem
 									key="creator"
-									startContent={<Icon name="doller-earn" className="h-4 w-4" />}>
+									href="/home/become-creator"
+									startContent={<Icon name="doller-earn" className="h-5 w-5" />}>
 									Become a creator
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="ai-image" className="h-4 w-4" />}>
+								<DropdownItem
+									key="ai-image"
+									href="/home/generate-ai-image"
+									startContent={<Icon name="ai-image" className="h-5 w-5" />}>
 									Generate AI Images
 								</DropdownItem>
 								<DropdownItem
-									key="creator"
-									startContent={<Icon name="public-access" className="h-4 w-4" />}>
+									key="public-images"
+									href="/home/public-images"
+									startContent={<Icon name="public-access" className="h-5 w-5" />}>
 									Public Images
 								</DropdownItem>
 								<DropdownItem
-									key="creator"
-									startContent={<Icon name="hand-mike" className="h-4 w-4" />}>
+									key="promotions"
+									href="/home/promotions"
+									startContent={<Icon name="hand-mike" className="h-5 w-5" />}>
 									Promotions
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="wallet" className="h-4 w-4" />}>
+								<DropdownItem
+									key="wallet"
+									href="/home/wallet-and-payments"
+									startContent={<Icon name="wallet" className="h-5 w-5" />}>
 									Wallet & Payment
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="settings" className="h-4 w-4" />}>
+								<DropdownItem
+									key="settings"
+									href="/home/settings"
+									startContent={<Icon name="settings" className="h-5 w-5" />}>
 									Settings
 								</DropdownItem>
-								<DropdownItem key="creator" startContent={<Icon name="logout" className="h-4 w-4" />}>
+								<DropdownItem
+									key="logout"
+									href="/"
+									startContent={<Icon name="logout" className="h-5 w-5" />}>
 									Log out
 								</DropdownItem>
 							</DropdownMenu>
