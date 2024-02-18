@@ -1,7 +1,19 @@
+"use client";
+
 import { Icon } from "@/app/Components/Icons/Icons";
 import logoIconBlack from "@/public/logo-icon-black.png";
 import logoTextBlack from "@/public/logo-text-black.png";
-import { Avatar, Button, Input, Link } from "@nextui-org/react";
+import {
+	Avatar,
+	Button,
+	Dropdown,
+	DropdownItem,
+	DropdownMenu,
+	DropdownTrigger,
+	Input,
+	Link,
+	User,
+} from "@nextui-org/react";
 import Image from "next/image";
 
 export default function FanHomeLayout({ children }) {
@@ -130,9 +142,64 @@ export default function FanHomeLayout({ children }) {
 							className="bg-transparent">
 							<Icon name="wallet" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly radius="full" className="ml-2 bg-transparent">
-							<Avatar src="https://i.pravatar.cc/150?img=36" />
-						</Button>
+
+						<Dropdown showArrow placement="top-end">
+							<DropdownTrigger>
+								<Button isIconOnly radius="full" className="ml-2 bg-transparent">
+									<Avatar src="https://i.pravatar.cc/150?img=36" />
+								</Button>
+							</DropdownTrigger>
+
+							<DropdownMenu aria-label="Profile Actions" variant="flat">
+								<DropdownItem key="avatar">
+									<User
+										name="John Rogers"
+										avatarProps={{
+											src: "https://i.pravatar.cc/150?img=36",
+											size: "sm",
+										}}
+										classNames={{
+											name: "text-base font-semibold",
+										}}
+									/>
+								</DropdownItem>
+
+								<DropdownItem key="profile" startContent={<Icon name="user" className="h-4 w-4" />}>
+									Profile
+								</DropdownItem>
+
+								<DropdownItem key="likes" startContent={<Icon name="heart-alt" className="h-4 w-4" />}>
+									My Likes / Purchased
+								</DropdownItem>
+								<DropdownItem
+									key="creator"
+									startContent={<Icon name="doller-earn" className="h-4 w-4" />}>
+									Become a creator
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="ai-image" className="h-4 w-4" />}>
+									Generate AI Images
+								</DropdownItem>
+								<DropdownItem
+									key="creator"
+									startContent={<Icon name="public-access" className="h-4 w-4" />}>
+									Public Images
+								</DropdownItem>
+								<DropdownItem
+									key="creator"
+									startContent={<Icon name="hand-mike" className="h-4 w-4" />}>
+									Promotions
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="wallet" className="h-4 w-4" />}>
+									Wallet & Payment
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="settings" className="h-4 w-4" />}>
+									Settings
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="logout" className="h-4 w-4" />}>
+									Log out
+								</DropdownItem>
+							</DropdownMenu>
+						</Dropdown>
 					</div>
 				</div>
 
@@ -149,21 +216,76 @@ export default function FanHomeLayout({ children }) {
 				{/* mobile appbar */}
 				<div className="sticky bottom-0 z-50 px-3 py-2 lg:hidden">
 					<div className="flex items-center justify-between gap-2 rounded-xl bg-white px-5 py-2.5 shadow-[-2px_-2px_50px_0px_rgba(0,0,0,0.1)]">
-						<Button isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/home" isIconOnly className="bg-neutral-100">
 							<Icon name="home" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/home/notification/transaction" isIconOnly className="bg-neutral-100">
 							<Icon name="bell" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/home/discover/search" isIconOnly className="bg-neutral-100">
 							<Icon name="search" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/home/message" isIconOnly className="bg-neutral-100">
 							<Icon name="message" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly className="bg-transparent">
-							<Avatar radius="lg" src="https://i.pravatar.cc/150?img=36" />
-						</Button>
+
+						<Dropdown showArrow placement="bottom-end">
+							<DropdownTrigger>
+								<Button isIconOnly radius="lg" className="ml-2 bg-transparent">
+									<Avatar radius="lg" src="https://i.pravatar.cc/150?img=36" />
+								</Button>
+							</DropdownTrigger>
+
+							<DropdownMenu aria-label="Profile Actions" variant="flat">
+								<DropdownItem key="avatar">
+									<User
+										name="John Rogers"
+										avatarProps={{
+											src: "https://i.pravatar.cc/150?img=36",
+											size: "sm",
+										}}
+										classNames={{
+											name: "text-base font-semibold",
+										}}
+									/>
+								</DropdownItem>
+
+								<DropdownItem key="profile" startContent={<Icon name="user" className="h-4 w-4" />}>
+									Profile
+								</DropdownItem>
+
+								<DropdownItem key="likes" startContent={<Icon name="heart-alt" className="h-4 w-4" />}>
+									My Likes / Purchased
+								</DropdownItem>
+								<DropdownItem
+									key="creator"
+									startContent={<Icon name="doller-earn" className="h-4 w-4" />}>
+									Become a creator
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="ai-image" className="h-4 w-4" />}>
+									Generate AI Images
+								</DropdownItem>
+								<DropdownItem
+									key="creator"
+									startContent={<Icon name="public-access" className="h-4 w-4" />}>
+									Public Images
+								</DropdownItem>
+								<DropdownItem
+									key="creator"
+									startContent={<Icon name="hand-mike" className="h-4 w-4" />}>
+									Promotions
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="wallet" className="h-4 w-4" />}>
+									Wallet & Payment
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="settings" className="h-4 w-4" />}>
+									Settings
+								</DropdownItem>
+								<DropdownItem key="creator" startContent={<Icon name="logout" className="h-4 w-4" />}>
+									Log out
+								</DropdownItem>
+							</DropdownMenu>
+						</Dropdown>
 					</div>
 				</div>
 			</div>
