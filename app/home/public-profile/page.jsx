@@ -1,8 +1,7 @@
 "use client";
-import { Icon } from "@/app/Components/Icons/Icons";
 import PostCard3 from "@/app/Components/Post/PostCard3";
 import postData from "@/public/api/post.json";
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 
 export default function PublicProfile() {
 	return (
@@ -52,54 +51,6 @@ export default function PublicProfile() {
 						</div>
 					</div>
 				</div>
-
-				<Dropdown showArrow placement="bottom-end">
-					<DropdownTrigger>
-						<Button isIconOnly radius="full" className="ml-2 bg-transparent">
-							<Icon name="settings" className="h-6 w-6" />
-						</Button>
-					</DropdownTrigger>
-
-					<DropdownMenu aria-label="Profile Actions" variant="flat">
-						<DropdownItem
-							key="public-profile"
-							href="/home/public-profile"
-							startContent={<Icon name="user" className="h-4 w-4" />}>
-							View public profile
-						</DropdownItem>
-
-						<DropdownItem
-							key="following"
-							href="/home/following"
-							startContent={<Icon name="user-check" className="h-4 w-4" />}>
-							Following
-						</DropdownItem>
-						<DropdownItem
-							key="followers"
-							href="/home/followers"
-							startContent={<Icon name="user-plus-alt" className="h-4 w-4" />}>
-							Followers
-						</DropdownItem>
-						<DropdownItem
-							key="transaction-history"
-							href="/home/transaction-history"
-							startContent={<Icon name="history" className="h-4 w-4" />}>
-							Transaction History
-						</DropdownItem>
-						<DropdownItem
-							key="edit-profile"
-							href="/home/edit-profile"
-							startContent={<Icon name="user-edit" className="h-4 w-4" />}>
-							Edit profile
-						</DropdownItem>
-						<DropdownItem
-							key="quest"
-							href="/home/quest"
-							startContent={<Icon name="hand-mike" className="h-4 w-4" />}>
-							Quest
-						</DropdownItem>
-					</DropdownMenu>
-				</Dropdown>
 			</div>
 
 			<div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
