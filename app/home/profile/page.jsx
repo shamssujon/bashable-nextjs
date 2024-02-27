@@ -82,7 +82,7 @@ export default function PublicProfile() {
 						</DropdownItem>
 						<DropdownItem
 							key="transaction-history"
-							href="/home/transaction-history"
+							href="/home/transactions/all"
 							startContent={<Icon name="history" className="h-4 w-4" />}>
 							Transaction History
 						</DropdownItem>
