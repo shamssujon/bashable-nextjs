@@ -88,7 +88,7 @@ export default function PublicProfile() {
 						</DropdownItem>
 						<DropdownItem
 							key="edit-profile"
-							href="/home/edit-profile"
+							href="/home/profile/edit"
 							startContent={<Icon name="user-edit" className="h-4 w-4" />}>
 							Edit profile
 						</DropdownItem>
