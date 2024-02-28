@@ -11,7 +11,7 @@ export default function Promotions() {
 						<h5 className="text-base font-semibold lg:text-lg">
 							<Link
 								href=""
-								className="text-inherit] static text-base font-semibold after:absolute after:inset-0 after:h-full after:w-full after:content-[''] lg:text-lg">
+								className="static text-base font-semibold text-inherit after:absolute after:inset-0 after:h-full after:w-full after:content-[''] lg:text-lg">
 								@erica posted her first post.
 							</Link>
 						</h5>
@@ -28,7 +28,7 @@ export default function Promotions() {
 						<h5 className="text-base font-semibold lg:text-lg">
 							<Link
 								href=""
-								className="text-inherit] static text-base font-semibold after:absolute after:inset-0 after:h-full after:w-full after:content-[''] lg:text-lg">
+								className="static text-base font-semibold text-inherit after:absolute after:inset-0 after:h-full after:w-full after:content-[''] lg:text-lg">
 								@juliana is selling her creations...
 							</Link>
 						</h5>
@@ -43,7 +43,7 @@ export default function Promotions() {
 						<h5 className="text-base font-semibold lg:text-lg">
 							<Link
 								href=""
-								className="text-inherit] static text-base font-semibold after:absolute after:inset-0 after:h-full after:w-full after:content-[''] lg:text-lg">
+								className="static text-base font-semibold text-inherit after:absolute after:inset-0 after:h-full after:w-full after:content-[''] lg:text-lg">
 								@butch is saying this:
 							</Link>
 						</h5>
