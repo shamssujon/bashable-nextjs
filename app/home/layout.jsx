@@ -16,7 +16,10 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 
+import { usePathname } from "next/navigation";
+
 export default function FanHomeLayout({ children }) {
+	const pathname = usePathname();
 	return (
 		<div className="flex h-screen flex-col overflow-y-auto lg:flex-row">
 			{/* Sidebar */}
@@ -36,7 +39,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home"}
 								fullWidth
 								startContent={<Icon name="home" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home" ? "bg-neutral-200" : "bg-transparent"}`}>
 								<span className="">Home</span>
 							</Button>
 							<Button
@@ -44,7 +47,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/discover"}
 								fullWidth
 								startContent={<Icon name="compass" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/discover" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Discover
 							</Button>
 							<Button
@@ -52,7 +55,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/generate-ai-image"}
 								fullWidth
 								startContent={<Icon name="ai-image" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/generate-ai-image" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Generate AI Images
 							</Button>
 							<Button
@@ -60,7 +63,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/become-creator"}
 								fullWidth
 								startContent={<Icon name="doller-earn" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/become-creator" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Become A Creator
 							</Button>
 							<Button
@@ -68,7 +71,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/notification/transaction"}
 								fullWidth
 								startContent={<Icon name="bell" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/notification" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Notifications
 							</Button>
 							<Button
@@ -76,7 +79,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/message"}
 								fullWidth
 								startContent={<Icon name="message" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/message" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Message
 							</Button>
 							<Button
@@ -84,7 +87,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/public-images"}
 								fullWidth
 								startContent={<Icon name="public-access" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/public-images" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Public Images
 							</Button>
 						</div>
@@ -95,7 +98,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/home/settings"}
 								fullWidth
 								startContent={<Icon name="settings" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/settings" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Settings
 							</Button>
 							<Button
@@ -103,7 +106,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/login"}
 								fullWidth
 								startContent={<Icon name="logout" className="h-6 w-6" />}
-								className="h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold">
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold bg-transparent`}>
 								Log out
 							</Button>
 						</div>

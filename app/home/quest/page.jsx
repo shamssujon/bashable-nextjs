@@ -4,7 +4,7 @@ import { Link, Progress } from "@nextui-org/react";
 export default function Promotions() {
 	return (
 		<div className="mx-auto max-w-2xl">
-            <h4 className="mb-4 text-xl font-semibold md:mb-6 md:text-2xl">My Quests</h4>
+			<h4 className="mb-4 text-xl font-semibold md:mb-6 md:text-2xl">My Quests</h4>
 
 			<div className="space-y-3 lg:space-y-4">
 				<div className="relative flex items-start gap-4 rounded-xl border p-4 lg:px-6 lg:py-4">
