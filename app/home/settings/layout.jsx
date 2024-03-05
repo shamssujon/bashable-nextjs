@@ -5,7 +5,7 @@ import { Listbox, ListboxItem, ListboxSection } from "@nextui-org/react";
 export default function SettingsLayout({ children }) {
 	return (
 		<div className="flex h-full gap-6">
-			<div className="border-r pr-5">
+			<div className="hidden border-r pr-5 lg:block">
 				<Listbox itemClasses={{ base: "rounded-none py-2 gap-4", title: "text-base font-medium " }}>
 					<ListboxSection title="Account" showDivider>
 						<ListboxItem

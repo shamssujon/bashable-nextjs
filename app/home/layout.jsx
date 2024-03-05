@@ -95,7 +95,7 @@ export default function FanHomeLayout({ children }) {
 						<div className="">
 							<Button
 								as={Link}
-								href={"/home/settings"}
+								href={"/home/settings/account"}
 								fullWidth
 								startContent={<Icon name="settings" className="h-6 w-6" />}
 								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/home/settings" ? "bg-neutral-200" : "bg-transparent"}`}>
@@ -212,7 +212,7 @@ export default function FanHomeLayout({ children }) {
 								</DropdownItem>
 								<DropdownItem
 									key="settings"
-									href="/home/settings"
+									href="/home/settings/account"
 									startContent={<Icon name="settings" className="h-4 w-4" />}>
 									Settings
 								</DropdownItem>
@@ -322,7 +322,7 @@ export default function FanHomeLayout({ children }) {
 								</DropdownItem>
 								<DropdownItem
 									key="settings"
-									href="/home/settings"
+									href="/home/settings/options"
 									startContent={<Icon name="settings" className="h-5 w-5" />}>
 									Settings
 								</DropdownItem>
