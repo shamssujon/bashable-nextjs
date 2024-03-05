@@ -34,19 +34,19 @@ export default function SettingsLayout({ children }) {
 					<ListboxSection title="Privacy and safety" showDivider>
 						<ListboxItem
 							key="privacy"
-							href="/home/settings/privacy"
+							href="/home/settings/rules"
 							startContent={<Icon name="document" className="size-5" />}>
 							Bashable rules
 						</ListboxItem>
 						<ListboxItem
 							key="privacy"
-							href="/home/settings/privacy"
+							href="/home/settings/announcements"
 							startContent={<Icon name="hand-mike-alt" className="size-5" />}>
 							Announcements
 						</ListboxItem>
 						<ListboxItem
 							key="privacy"
-							href="/home/settings/privacy"
+							href="/home/settings/blocked-accounts"
 							startContent={<Icon name="user-block" className="size-5" />}>
 							Blocked accounts
 						</ListboxItem>
