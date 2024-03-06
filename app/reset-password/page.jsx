@@ -49,7 +49,7 @@ export default function Login() {
 
 							<Button
 								as={Link}
-								href={"/home"}
+								href={"/"}
 								fullWidth
 								className="mt-4 h-auto bg-black/90 py-3 text-lg font-semibold text-white shadow">
 								Reset Password
