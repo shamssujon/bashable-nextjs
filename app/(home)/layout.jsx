@@ -106,7 +106,7 @@ export default function FanHomeLayout({ children }) {
 								href={"/login"}
 								fullWidth
 								startContent={<Icon name="logout" className="h-6 w-6" />}
-								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold bg-transparent`}>
+								className={`h-auto justify-start gap-3 bg-transparent py-3 text-xl font-semibold`}>
 								Log out
 							</Button>
 						</div>
@@ -131,10 +131,20 @@ export default function FanHomeLayout({ children }) {
 					</div>
 
 					<div className="flex w-[350px] items-center justify-end gap-2">
-						<Button isIconOnly radius="full" className="bg-transparent">
+						<Button
+							as={Link}
+							href={"/message"}
+							isIconOnly
+							radius="full"
+							className="bg-transparent">
 							<Icon name="message" className="h-6 w-6" />
 						</Button>
-						<Button isIconOnly radius="full" className="bg-transparent">
+						<Button
+							as={Link}
+							href={"/notification/transaction"}
+							isIconOnly
+							radius="full"
+							className="bg-transparent">
 							<Icon name="bell" className="h-6 w-6" />
 						</Button>
 						<Button

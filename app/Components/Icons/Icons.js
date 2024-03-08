@@ -6,6 +6,21 @@ const Home = (props) => (
 );
 
 const Bell = (props) => (
+	<svg
+		{...props}
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		fill="currentColor"
+		stroke="currentColor"
+		stroke-width="0">
+		<path
+			stroke="none"
+			d="M6 8a6 6 0 1 1 12 0v2.917c0 .703.228 1.387.65 1.95L20.7 15.6a1.5 1.5 0 0 1-1.2 2.4h-15a1.5 1.5 0 0 1-1.2-2.4l2.05-2.733a3.25 3.25 0 0 0 .65-1.95Zm6 13.5A3.502 3.502 0 0 1 8.645 19h6.71A3.502 3.502 0 0 1 12 21.5Z"
+		/>
+	</svg>
+);
+
+const BellDot = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M11.091 23c1.647 0 3.024-1.183 3.34-2.75h-6.68c.317 1.567 1.694 2.75 3.34 2.75Zm6.375-11h-.011c-3.508 0-6.364-2.878-6.364-6.417 0-.972.222-1.892.608-2.718-.2-.02-.402-.032-.608-.032-3.514 0-6.363 2.873-6.363 6.417v2.556a6.167 6.167 0 0 1-2.171 4.705 1.612 1.612 0 0 0-.5 1.646c.193.718.896 1.177 1.634 1.177h14.795c.775 0 1.505-.506 1.662-1.272a1.614 1.614 0 0 0-.543-1.57c-1.321-1.117-2.086-2.759-2.14-4.493Z" />
 		<path
@@ -159,6 +174,12 @@ const UserBlock = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M18 13.25a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5ZM14.75 18A3.254 3.254 0 0 1 18 14.75a3.22 3.22 0 0 1 1.698.492l-4.456 4.456A3.218 3.218 0 0 1 14.75 18ZM18 21.25a3.218 3.218 0 0 1-1.698-.492l4.456-4.456c.32.509.49 1.097.492 1.698A3.254 3.254 0 0 1 18 21.25Zm-9-10.5a4.75 4.75 0 1 0 0-9.5 4.75 4.75 0 0 0 0 9.5Z" />
 		<path d="M15.59 12.23a6.898 6.898 0 0 0-2.04-1.95 6.24 6.24 0 0 1-9.1 0A6.703 6.703 0 0 0 1.25 16v2a.755.755 0 0 0 .75.75h9.8a6.2 6.2 0 0 1 3.79-6.52Z" />
+	</svg>
+);
+
+const UserCard = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M21.25 3H2.75A2.752 2.752 0 0 0 0 5.75v12.5A2.752 2.752 0 0 0 2.75 21h18.5A2.752 2.752 0 0 0 24 18.25V5.75A2.752 2.752 0 0 0 21.25 3ZM7.5 7C8.878 7 10 8.122 10 9.5S8.878 12 7.5 12A2.503 2.503 0 0 1 5 9.5C5 8.122 6.122 7 7.5 7Zm4.5 9.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-.5A2.752 2.752 0 0 1 5.75 13h3.5A2.752 2.752 0 0 1 12 15.75v.5Zm8.25.75h-5.5a.75.75 0 1 1 0-1.5h5.5a.75.75 0 1 1 0 1.5Zm0-4h-5.5a.75.75 0 1 1 0-1.5h5.5a.75.75 0 1 1 0 1.5Zm0-4h-5.5a.75.75 0 1 1 0-1.5h5.5a.75.75 0 1 1 0 1.5Z" />
 	</svg>
 );
 
@@ -370,10 +391,23 @@ const Document = (props) => (
 	</svg>
 );
 
+const CheckCircle = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M12 24a12 12 0 1 0 0-24 12 12 0 0 0 0 24Zm5.297-14.203-6 6a1.12 1.12 0 0 1-1.59 0l-3-3a1.125 1.125 0 0 1 1.59-1.59l2.203 2.204 5.203-5.208a1.125 1.125 0 0 1 1.59 1.59l.004.004Z" />
+	</svg>
+);
+
+const Selfie = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M4.25 16.005V5A2.752 2.752 0 0 1 7 2.25h10A2.752 2.752 0 0 1 19.75 5v10.982c-1.127-1.613-2.919-2.824-5.056-3.385A3.73 3.73 0 0 0 15.75 10 3.754 3.754 0 0 0 12 6.25 3.754 3.754 0 0 0 8.25 10c0 1.009.405 1.923 1.056 2.598-2.137.562-3.928 1.777-5.056 3.407Zm10-6.005A2.252 2.252 0 0 0 12 7.75 2.252 2.252 0 0 0 9.75 10 2.252 2.252 0 0 0 12 12.25 2.252 2.252 0 0 0 14.25 10Zm5.211 9.442C19.144 16.25 15.867 13.75 12 13.75c-3.867 0-7.144 2.5-7.461 5.692a.744.744 0 0 1-.154.366A2.744 2.744 0 0 0 7 21.749h10a2.744 2.744 0 0 0 2.615-1.943.73.73 0 0 1-.155-.364h.001Z" />
+	</svg>
+);
+
 // Map of icon names to icon components
 const icons = {
 	home: Home,
 	bell: Bell,
+	"bell-dot": BellDot,
 	"bell-check": BellCheck,
 	compass: Compass,
 	"doller-earn": DollerEarn,
@@ -391,6 +425,7 @@ const icons = {
 	"user-circle": UserCircle,
 	"user-heart": UserHeart,
 	"user-block": UserBlock,
+	"user-card": UserCard,
 	search: Search,
 	search2: Search2,
 	"arrow-left": ArrowLeft,
@@ -419,6 +454,8 @@ const icons = {
 	trash: Trash,
 	flag: Flag,
 	document: Document,
+	"check-circle": CheckCircle,
+	selfie: Selfie,
 };
 
 // The Icon component that selects which icon to render based on the 'name' prop
@@ -431,3 +468,33 @@ export const Icon = ({ name, ...props }) => {
 	}
 	return <IconComponent {...props} />;
 };
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	x="0px"
+	y="0px"
+	width="48"
+	height="48"
+	viewBox="0 0 172 172"
+	style=" fill:#26e07f;">
+	<g
+		fill="none"
+		fill-rule="nonzero"
+		stroke="none"
+		stroke-width="1"
+		stroke-linecap="butt"
+		stroke-linejoin="miter"
+		stroke-miterlimit="10"
+		stroke-dasharray=""
+		stroke-dashoffset="0"
+		font-family="none"
+		font-weight="none"
+		font-size="none"
+		text-anchor="none"
+		style="mix-blend-mode: normal">
+		<path d="M0,172v-172h172v172z" fill="none"></path>
+		<g fill="#1fb141">
+			<path d="M21.5,21.5v129h64.5v-32.25v-64.5v-32.25zM86,53.75c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25c-17.7805,0 -32.25,14.4695 -32.25,32.25zM118.25,86c-17.7805,0 -32.25,14.4695 -32.25,32.25c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25z"></path>
+		</g>
+	</g>
+</svg>;
