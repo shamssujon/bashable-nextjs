@@ -44,7 +44,7 @@ export default function Banner() {
 			<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 				<Button
 					as={Link}
-					href={"/become-creator/banner"}
+					href={"/become-creator/subscription"}
 					variant="light"
 					size="lg"
 					className="font-semibold text-foreground-500 hover:text-foreground-900">
@@ -52,7 +52,7 @@ export default function Banner() {
 				</Button>
 				<Button
 					as={Link}
-					href={"/become-creator/banner"}
+					href={"/become-creator/subscription"}
 					size="lg"
 					className="w-full bg-black font-semibold text-white md:w-auto">
 					Continue

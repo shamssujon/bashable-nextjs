@@ -43,7 +43,7 @@ export default function Subscription() {
 				</Button> */}
 				<Button
 					as={Link}
-					href={"/become-creator/banner"}
+					href={"/become-creator/finish"}
 					size="lg"
 					className="w-full bg-black font-semibold text-white md:w-auto">
 					Continue

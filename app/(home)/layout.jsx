@@ -60,7 +60,7 @@ export default function FanHomeLayout({ children }) {
 							</Button>
 							<Button
 								as={Link}
-								href={"/become-creator"}
+								href={"/become-creator/country"}
 								fullWidth
 								startContent={<Icon name="doller-earn" className="h-6 w-6" />}
 								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/become-creator" ? "bg-neutral-200" : "bg-transparent"}`}>
@@ -192,7 +192,7 @@ export default function FanHomeLayout({ children }) {
 								</DropdownItem>
 								<DropdownItem
 									key="creator"
-									href="/become-creator"
+									href="/become-creator/country"
 									startContent={<Icon name="doller-earn" className="h-4 w-4" />}>
 									Become a creator
 								</DropdownItem>
@@ -302,7 +302,7 @@ export default function FanHomeLayout({ children }) {
 								</DropdownItem>
 								<DropdownItem
 									key="creator"
-									href="/become-creator"
+									href="/become-creator/options"
 									startContent={<Icon name="doller-earn" className="h-5 w-5" />}>
 									Become a creator
 								</DropdownItem>
