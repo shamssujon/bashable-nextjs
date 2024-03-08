@@ -5,5 +5,9 @@ import { useRouter } from "next/navigation";
 
 export function Providers({ children }) {
 	const router = useRouter();
-	return <NextUIProvider navigate={router.push}>{children}</NextUIProvider>;
+	return (
+		<NextUIProvider navigate={router.push} className="h-full">
+			{children}
+		</NextUIProvider>
+	);
 }

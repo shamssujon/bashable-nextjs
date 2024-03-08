@@ -21,9 +21,9 @@ import { usePathname } from "next/navigation";
 export default function FanHomeLayout({ children }) {
 	const pathname = usePathname();
 	return (
-		<div className="flex h-screen flex-col overflow-y-auto lg:flex-row">
+		<div className="flex h-full flex-col overflow-y-auto lg:flex-row">
 			{/* Sidebar */}
-			<div className="sticky top-0 hidden h-screen w-[350px] shrink-0 lg:block">
+			<div className="sticky top-0 hidden h-full w-[350px] shrink-0 lg:block">
 				<div className="flex h-full flex-col gap-10 bg-neutral-100">
 					<div className="flex h-[72px] flex-col justify-center border-b px-6 py-4">
 						<Link href={"/"} className="flex w-full items-center gap-4 ">
@@ -114,7 +114,7 @@ export default function FanHomeLayout({ children }) {
 				</div>
 			</div>
 
-			<div className="flex h-screen w-full flex-1 flex-col justify-between overflow-y-auto">
+			<div className="flex w-full flex-1 flex-col justify-between overflow-y-auto">
 				{/* header */}
 				<div className="sticky top-0 z-20 hidden h-[72px] shrink-0 items-center justify-between gap-4 border-b bg-white px-6 lg:flex">
 					<div className="mx-auto max-w-xl flex-1">
@@ -131,12 +131,7 @@ export default function FanHomeLayout({ children }) {
 					</div>
 
 					<div className="flex w-[350px] items-center justify-end gap-2">
-						<Button
-							as={Link}
-							href={"/message"}
-							isIconOnly
-							radius="full"
-							className="bg-transparent">
+						<Button as={Link} href={"/message"} isIconOnly radius="full" className="bg-transparent">
 							<Icon name="message" className="h-6 w-6" />
 						</Button>
 						<Button
