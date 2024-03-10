@@ -34,7 +34,12 @@ module.exports = {
 			addCommonColors: true,
 			themes: {
 				light: {
-					black: "#000000",
+					colors: {
+						orange: {
+							500: "#FF550D",
+						},
+					},
+					// black: "#000000",
 				},
 			},
 		}),
