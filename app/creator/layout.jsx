@@ -231,7 +231,7 @@ export default function CreatorLayout({ children }) {
 									key="whats-new"
 									href="/creator/whats-new"
 									startContent={<Icon name="star" className="h-4 w-4" />}>
-									What's New?
+									What&apos;s New?
 								</DropdownItem>
 								<DropdownItem
 									key="help"
