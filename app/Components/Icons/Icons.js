@@ -193,7 +193,7 @@ const Search = (props) => (
 	</svg>
 );
 
-const Search2 = (props) => (
+const SearchAlt = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path
 			fillRule="evenodd"
@@ -425,6 +425,12 @@ const Statistics = (props) => (
 	</svg>
 );
 
+const StatisticsAlt = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M3 10.581a1.581 1.581 0 1 1 3.163 0v9.838a1.581 1.581 0 1 1-3.163 0V10.58Zm6.919-7a1.581 1.581 0 1 1 3.162 0V20.42a1.581 1.581 0 1 1-3.162 0V3.58Zm6.918 5a1.581 1.581 0 1 1 3.163 0V20.42a1.581 1.581 0 1 1-3.163 0V8.58Z" />
+	</svg>
+);
+
 const DocumentList = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path
@@ -461,6 +467,16 @@ const Plus = (props) => (
 	</svg>
 );
 
+const PlusCircle = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" />
+		<path
+			fill="#fff"
+			d="M17 11.111h-4.11v-4.11a.889.889 0 1 0-1.779 0v4.11h-4.11a.889.889 0 0 0 0 1.778h4.11V17a.889.889 0 0 0 1.778 0v-4.11H17a.889.889 0 1 0 0-1.779Z"
+		/>
+	</svg>
+);
+
 const DollarCursor = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M18.635 21.75H14.7c-.34 0-.665-.146-.89-.402l-3.131-3.555a1.198 1.198 0 0 1 1.53-1.81l1.725 1.068v-4.85a1.232 1.232 0 1 1 2.465 0v3.073l3.11.38a1.474 1.474 0 0 1 1.237 1.871l-.97 3.367a1.187 1.187 0 0 1-1.14.858Z" />
@@ -478,6 +494,12 @@ const Eye = (props) => (
 const Renewal = (props) => (
 	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 		<path d="M12 .751a11.214 11.214 0 0 0-4.644.998.376.376 0 0 0-.18.51l.67 1.343a.376.376 0 0 0 .49.174A8.96 8.96 0 0 1 12 3.001a8.993 8.993 0 0 1 7.446 14.041l-1.182-1.183a.374.374 0 0 0-.639.266v4.125c0 .207.166.375.373.377h4.124a.375.375 0 0 0 .267-.642l-1.33-1.33a11.196 11.196 0 0 0 2.191-6.654A11.256 11.256 0 0 0 12.001.75ZM1.875 3.374a.376.376 0 0 0-.266.64l1.33 1.33A11.197 11.197 0 0 0 .751 12a11.257 11.257 0 0 0 15.896 10.247.377.377 0 0 0 .178-.51l-.672-1.34a.376.376 0 0 0-.487-.175A8.963 8.963 0 0 1 12 21 8.993 8.993 0 0 1 4.549 6.96l1.187 1.183a.376.376 0 0 0 .639-.267V3.752a.376.376 0 0 0-.376-.376l-4.125-.002Zm10.856 2.25a.376.376 0 0 0-.297.176l-4.499 7.125a.376.376 0 0 0 .315.575h2.97l-.342 4.472c-.029.387.479.556.688.23l4.502-7.127a.375.375 0 0 0-.319-.575h-2.97l.346-4.47a.376.376 0 0 0-.394-.406Z" />
+	</svg>
+);
+
+const Messanger = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M12 0C5.373 0 0 4.974 0 11.11c0 3.497 1.744 6.616 4.471 8.652V24l4.086-2.242c1.091.301 2.246.465 3.443.465 6.627 0 12-4.974 12-11.111C24 4.976 18.627 0 12 0Zm1.193 14.963-3.056-3.26-5.963 3.26L10.735 8l3.13 3.259 5.888-3.26-6.56 6.964Z" />
 	</svg>
 );
 
@@ -505,7 +527,7 @@ const icons = {
 	"user-block": UserBlock,
 	"user-card": UserCard,
 	search: Search,
-	search2: Search2,
+	"search-alt": SearchAlt,
 	"arrow-left": ArrowLeft,
 	"arrow-right": ArrowRight,
 	heart: Heart,
@@ -536,6 +558,7 @@ const icons = {
 	vault: Vault,
 	queue: Queue,
 	statistics: Statistics,
+	"statistics-alt": StatisticsAlt,
 	"document-list": DocumentList,
 	earning: Earning,
 	giftbox: GiftBox,
@@ -544,6 +567,9 @@ const icons = {
 	eye: Eye,
 	renewal: Renewal,
 	plus: Plus,
+	"plus-circle": PlusCircle,
+	selfie: Selfie,
+	messanger: Messanger,
 };
 
 // The Icon component that selects which icon to render based on the 'name' prop

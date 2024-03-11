@@ -3,7 +3,7 @@ import { Avatar, Button } from "@nextui-org/react";
 export default function CreatorNotifications() {
 	return (
 		<div className="mx-auto max-w-screen-sm">
-			<div className="mb-6 flex items-center gap-2 overflow-x-auto py-2">
+			<div className="-mt-2 mb-6 flex items-center gap-2 overflow-x-auto py-2">
 				<Button className="shrink-0 border border-orange-500 bg-orange-500 font-semibold text-white hover:border-orange-500 hover:bg-orange-500 hover:text-white">
 					All
 				</Button>

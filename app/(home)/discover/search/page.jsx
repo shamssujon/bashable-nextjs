@@ -33,7 +33,7 @@ export default async function Discover() {
 						placeholder="Search for creators..."
 						startContent={
 							<Icon
-								name="search2"
+								name="search-alt"
 								className="pointer-events-none h-4 w-4 flex-shrink-0 text-2xl text-default-400"
 							/>
 						}
