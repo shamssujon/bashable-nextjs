@@ -60,10 +60,10 @@ export default function CreatorLayout({ children }) {
 							</Button>
 							<Button
 								as={Link}
-								href={"/message"}
+								href={"/creator/message"}
 								fullWidth
 								startContent={<Icon name="message" className="size-6" />}
-								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/message" ? "bg-neutral-200" : "bg-transparent"}`}>
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/creator/message" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Message
 							</Button>
 							<Button

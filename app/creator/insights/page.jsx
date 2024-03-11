@@ -1,63 +1,56 @@
-import { Icon } from "@/app/Components/Icons/Icons";
-import { Button, Image, Progress } from "@nextui-org/react";
+// using 'use client' to avoid the 'Error: Unknown element <[object Object]> in collection.' when using the select component from nextUI
+"use client";
 
-export default function CreatorHome() {
+import { Icon } from "@/app/Components/Icons/Icons";
+import { Image, Input, Select, SelectItem } from "@nextui-org/react";
+
+export default function CreatorInsights() {
 	return (
 		<div className="mx-auto max-w-screen-lg space-y-6">
-			<div className="relative flex items-center justify-between gap-4 overflow-hidden rounded-2xl p-4 lg:p-6">
+			<div className="relative overflow-hidden rounded-2xl p-4 lg:p-6">
 				<Image
 					removeWrapper
 					isBlurred
-					src="https://mighty.tools/mockmind-api/content/human/9.jpg"
+					src="https://mighty.tools/mockmind-api/content/human/6.jpg"
 					alt="NextUI Album Cover"
 					classNames={{
 						img: "w-full h-full object-cover absolute inset-0 -z-10 blur-lg",
 					}}
 				/>
-				<div className="text-white">
-					<h4 className="text-xl font-semibold lg:text-2xl">Your Bashble Moments!</h4>
-					<p className="mt-1 text-sm text-white/80 lg:text-base">Discover Your account highlights</p>
+				<div className="flex justify-center gap-2 text-center text-xl font-semibold text-white lg:text-2xl">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="currentColor"
+						viewBox="0 0 20 19"
+						className="mt-1 size-6">
+						<path
+							fillRule="evenodd"
+							clipRule="evenodd"
+							d="M8.043 18.387a.477.477 0 0 1-.939.042L5.23 9.809a1.596 1.596 0 0 1 1.242-1.897l3.086-.617a1.59 1.59 0 0 0 1.217-1.122l1.44-5.045a.479.479 0 0 1 .928.037l1.57 7.857a1.59 1.59 0 0 1-1.14 1.846l-3.725 1.016a1.59 1.59 0 0 0-1.159 1.336l-.645 5.167Z"
+						/>
+					</svg>
+					<span className="drop-shadow">
+						You are in the <span className="text-[#04FE4A]">Top 100% </span> of all creators
+					</span>
 				</div>
-				<Button
-					isIconOnly
-					radius="full"
-					aria-label="Like"
-					className="group static bg-transparent text-white after:absolute after:inset-0 after:h-full after:w-full after:content-['']">
-					<Icon
-						name="arrow-right"
-						className="size-7 transition will-change-transform group-hover:translate-x-1"
-					/>
-				</Button>
 			</div>
 
-			<div className="rounded-2xl border p-4 lg:p-6">
-				<h6 className="mb-6 font-medium">Complete Your Profile</h6>
+			<div className="flex flex-col md:flex-row justify-between gap-4">
+				<Select size="sm" radius="lg" variant="bordered" className="md:max-w-40" defaultSelectedKeys="1">
+					<SelectItem key={1} value="last-7-days">
+						Last 7 days
+					</SelectItem>
+					<SelectItem key={2} value="last-month">
+						Last month
+					</SelectItem>
+					<SelectItem key={3} value="last-year">
+						Last year
+					</SelectItem>
+				</Select>
 
-				<div className="flex flex-col items-stretch justify-between gap-6 md:flex-row md:items-end">
-					<div className="max-w-md flex-1">
-						<Progress
-							label="2/8 Steps"
-							value={25}
-							showValueLabel={true}
-							classNames={{
-								base: "",
-								track: "",
-								indicator: "",
-								labelWrapper: "flex-row-reverse items-center mb-2",
-								label: "text-sm font-medium",
-								value: "font-semibold !text-4xl",
-							}}
-						/>
-					</div>
-
-					<div className="text-center">
-						<Button
-							size="lg"
-							radius="sm"
-							className="h-auto w-full bg-orange-500 py-3 text-base font-medium text-white lg:w-full lg:text-lg">
-							Complete your profile
-						</Button>
-					</div>
+				<div className="flex items-center gap-3">
+					<Input size="sm" type="date" aria-label="from date" />
+					<Input size="sm" type="date" aria-label="to date" />
 				</div>
 			</div>
 
