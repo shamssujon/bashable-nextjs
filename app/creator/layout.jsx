@@ -52,10 +52,10 @@ export default function CreatorLayout({ children }) {
 							</Button>
 							<Button
 								as={Link}
-								href={"/notification/transaction"}
+								href={"/creator/notifications"}
 								fullWidth
 								startContent={<Icon name="bell" className="size-6" />}
-								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/notification" ? "bg-neutral-200" : "bg-transparent"}`}>
+								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/creator/notifications" ? "bg-neutral-200" : "bg-transparent"}`}>
 								Notifications
 							</Button>
 							<Button
