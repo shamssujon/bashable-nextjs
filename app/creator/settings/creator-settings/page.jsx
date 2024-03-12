@@ -36,7 +36,7 @@ export default function CreatorSettingsOptions() {
 				</ListboxItem>
 				<ListboxItem
 					key="4"
-					href=""
+					href="/creator/settings/creator-settings/automated-messages"
 					startContent={<Icon name="message-alt" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Automated messages

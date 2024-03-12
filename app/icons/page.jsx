@@ -76,6 +76,9 @@ const icons = [
 	"sliders-horizontal",
 	"history-alt",
 	"alert",
+	"x-circle",
+	"arrow-left-circle",
+	"basket",
 ];
 
 export default function Icons() {

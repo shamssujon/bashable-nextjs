@@ -41,7 +41,10 @@ export default function CreatorSettingsLayout({ children }) {
 							startContent={<Icon name="ai" className="size-5" />}>
 							My AI
 						</ListboxItem>
-						<ListboxItem key="7" href="" startContent={<Icon name="message-alt" className="size-5" />}>
+						<ListboxItem
+							key="7"
+							href="/creator/settings/creator-settings/automated-messages"
+							startContent={<Icon name="message-alt" className="size-5" />}>
 							Automated messages
 						</ListboxItem>
 						<ListboxItem key="8" href="" startContent={<Icon name="question" className="size-5" />}>
