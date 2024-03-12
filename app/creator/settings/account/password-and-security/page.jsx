@@ -8,7 +8,7 @@ export default function CreatorPasswordSettings() {
 	const toggleVisibility = () => setIsVisible(!isVisible);
 
 	return (
-		<div className="mx-auto max-w-xl">
+		<div className="mx-auto max-w-screen-sm">
 			<form>
 				<div className="flex flex-col gap-4">
 					<div className="">
@@ -87,9 +87,9 @@ export default function CreatorPasswordSettings() {
 					Enable Two Factor Authentication
 				</Button>
 				<p className="mt-4 text-sm leading-tight text-foreground-400">
-					Note: If you are using a social login method (Google, Twitter), you'll need to add a password in
+					Note: If you are using a social login method (Google, Twitter), you&apos;ll need to add a password in
 					order to enable two-factor authentication. <br /> If you lose the device where your two-factor
-					authentication code is, you'll need to contact support and verify your identity again.
+					authentication code is, you&apos;ll need to contact support and verify your identity again.
 				</p>
 			</div>
 		</div>

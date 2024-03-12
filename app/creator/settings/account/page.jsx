@@ -14,21 +14,21 @@ export default function CreatorSettingsAccountOptions() {
 				itemClasses={{ base: "rounded-none py-3 gap-4", title: "text-xl font-medium" }}>
 				<ListboxItem
 					key="1"
-					href="/settings/account"
+					href="/creator/settings/account/account-info"
 					startContent={<Icon name="user" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Account Info
 				</ListboxItem>
 				<ListboxItem
 					key="2"
-					href="/creator/settings/password-and-security"
+					href="/creator/settings/account/password-and-security"
 					startContent={<Icon name="folder-lock" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Password and security
 				</ListboxItem>
 				<ListboxItem
 					key="3"
-					href="/settings/account"
+					href="/creator/settings/account/delete-account"
 					startContent={<Icon name="trash" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Delete my account

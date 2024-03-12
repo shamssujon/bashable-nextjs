@@ -562,8 +562,15 @@ const HistoryAlt = (props) => (
 	</svg>
 );
 
+const Alert = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path d="M23.501 17.998 15.023 2.413c-1.362-2.293-4.682-2.296-6.046 0L.499 17.998c-1.392 2.343.293 5.31 3.023 5.31h16.956c2.727 0 4.416-2.965 3.023-5.31ZM12 20.496a1.408 1.408 0 0 1-1.406-1.406c0-.776.63-1.407 1.406-1.407a1.407 1.407 0 0 1 0 2.813Zm1.406-5.625c0 .775-.63 1.406-1.406 1.406a1.408 1.408 0 0 1-1.406-1.406V7.839c0-.775.63-1.406 1.406-1.406.775 0 1.406.631 1.406 1.406v7.032Z" />
+	</svg>
+);
+
 // Map of icon names to icon components
 const icons = {
+	alert: Alert,
 	"history-alt": HistoryAlt,
 	"sliders-horizontal": SlidersHorizontal,
 	"message-alt": MessageAlt,

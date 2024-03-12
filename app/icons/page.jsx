@@ -75,6 +75,7 @@ const icons = [
 	"message-alt",
 	"sliders-horizontal",
 	"history-alt",
+	"alert",
 ];
 
 export default function Icons() {
