@@ -79,6 +79,7 @@ const icons = [
 	"x-circle",
 	"arrow-left-circle",
 	"basket",
+	"card-plus",
 ];
 
 export default function Icons() {

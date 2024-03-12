@@ -590,9 +590,25 @@ const Basket = (props) => (
 	</svg>
 );
 
+const CardPlus = (props) => (
+	<svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+		<path
+			fillRule="evenodd"
+			clipRule="evenodd"
+			d="M18.5 10.25A4.752 4.752 0 0 0 13.75 15a4.752 4.752 0 0 0 4.75 4.75A4.752 4.752 0 0 0 23.25 15a4.752 4.752 0 0 0-4.75-4.75Zm.75 4V13a.75.75 0 1 0-1.5 0v1.25H16.5a.75.75 0 1 0 0 1.5h1.25V17a.75.75 0 1 0 1.5 0v-1.25h1.25a.75.75 0 1 0 0-1.5h-1.25Z"
+		/>
+		<path
+			fillRule="evenodd"
+			clipRule="evenodd"
+			d="M16.153 9.75H1.75V16c0 .729.29 1.429.805 1.945a2.755 2.755 0 0 0 1.945.805h9.642A5.73 5.73 0 0 1 12.75 15a5.754 5.754 0 0 1 3.403-5.25Zm-7.652 4.5H5.5a.75.75 0 1 0 0 1.5h3.001a.75.75 0 1 0 0-1.5Zm-6.751-6h19.5V7c0-.729-.29-1.429-.805-1.945A2.755 2.755 0 0 0 18.5 4.25h-14c-.729 0-1.429.29-1.945.805A2.755 2.755 0 0 0 1.75 7v1.25Z"
+		/>
+	</svg>
+);
+
 // Map of icon names to icon components
 const icons = {
-	"basket": Basket,
+	"card-plus": CardPlus,
+	basket: Basket,
 	"arrow-left-circle": ArrowLeftCircle,
 	"x-circle": XCircle,
 	alert: Alert,

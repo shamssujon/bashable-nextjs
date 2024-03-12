@@ -14,7 +14,7 @@ export default function CreatorSettingsPaymentOptions() {
 				itemClasses={{ base: "rounded-none py-3 gap-4", title: "text-xl font-medium" }}>
 				<ListboxItem
 					key="1"
-					href=""
+					href="/creator/settings/payments/wallet"
 					startContent={<Icon name="wallet" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Wallet & Payment Methods

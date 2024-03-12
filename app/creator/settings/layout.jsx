@@ -53,7 +53,10 @@ export default function CreatorSettingsLayout({ children }) {
 					</ListboxSection>
 
 					<ListboxSection title="Payments and subscriptions" showDivider>
-						<ListboxItem key="9" href="" startContent={<Icon name="wallet" className="size-5" />}>
+						<ListboxItem
+							key="9"
+							href="/creator/settings/payments/wallet"
+							startContent={<Icon name="wallet" className="size-5" />}>
 							Wallet & Payment Methods
 						</ListboxItem>
 						<ListboxItem
