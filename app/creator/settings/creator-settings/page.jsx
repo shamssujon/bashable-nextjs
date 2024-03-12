@@ -29,7 +29,7 @@ export default function CreatorSettingsOptions() {
 				</ListboxItem>
 				<ListboxItem
 					key="3"
-					href=""
+					href="/creator/settings/creator-settings/my-ai"
 					startContent={<Icon name="ai" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					My AI
