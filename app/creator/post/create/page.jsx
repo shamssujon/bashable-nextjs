@@ -2,7 +2,7 @@
 "use client";
 
 import { Icon } from "@/app/Components/Icons/Icons";
-import { Button, Image, Select, SelectItem, Textarea } from "@nextui-org/react";
+import { Button, Image, Link, Select, SelectItem, Textarea } from "@nextui-org/react";
 
 export default function CreatePost() {
 	return (
@@ -93,7 +93,12 @@ export default function CreatePost() {
 				</div>
 
 				<div className="mt-5">
-					<Button fullWidth size="lg" className="h-auto bg-black py-3 text-lg font-semibold text-white">
+					<Button
+						as={Link}
+						href="/creator/post/example"
+						fullWidth
+						size="lg"
+						className="h-auto bg-black py-3 text-lg font-semibold text-white">
 						Create Post
 					</Button>
 					<Button

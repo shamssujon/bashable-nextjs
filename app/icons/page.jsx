@@ -83,6 +83,7 @@ const icons = [
 	"cloud-up",
 	"time",
 	"pencil-square",
+	"pin",
 ];
 
 export default function Icons() {
