@@ -78,9 +78,9 @@ const icons = [
 
 export default function Icons() {
 	return (
-		<div className="grid grid-cols-[repeat(auto-fill,_minmax(160px,_1fr))] gap-2 md:gap-4 p-5 md:p-10">
-			{icons.map((icon) => (
-				<div className="flex flex-col items-center rounded-xl border p-4 text-center">
+		<div className="grid grid-cols-[repeat(auto-fill,_minmax(160px,_1fr))] gap-2 p-5 md:gap-4 md:p-10">
+			{icons.map((icon, index) => (
+				<div key={index} className="flex flex-col items-center rounded-xl border p-4 text-center">
 					<Icon name={icon} className="size-8" />
 					<p className="mt-2 text-sm">{icon}</p>
 				</div>
