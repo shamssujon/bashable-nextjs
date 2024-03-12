@@ -20,13 +20,13 @@ export default function ExamplePost() {
 						<DropdownItem key="1" href="" startContent={<Icon name="pencil-square" className="size-4" />}>
 							Edit Post
 						</DropdownItem>
-						<DropdownItem key="1" href="" startContent={<Icon name="plus-circle" className="size-4" />}>
+						<DropdownItem key="2" href="" startContent={<Icon name="plus-circle" className="size-4" />}>
 							Add Post Collage
 						</DropdownItem>
-						<DropdownItem key="1" href="" startContent={<Icon name="trash" className="size-4" />}>
+						<DropdownItem key="3" href="" startContent={<Icon name="trash" className="size-4" />}>
 							Delete Post
 						</DropdownItem>
-						<DropdownItem key="1" href="" startContent={<Icon name="pin" className="size-4" />}>
+						<DropdownItem key="4" href="" startContent={<Icon name="pin" className="size-4" />}>
 							Pin To Profile
 						</DropdownItem>
 					</DropdownMenu>
