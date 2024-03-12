@@ -29,7 +29,10 @@ export default function CreatorSettingsLayout({ children }) {
 						<ListboxItem key="4" href="" startContent={<Icon name="price" className="size-5" />}>
 							Subscription
 						</ListboxItem>
-						<ListboxItem key="5" href="" startContent={<Icon name="user" className="size-5" />}>
+						<ListboxItem
+							key="5"
+							href="/creator/settings/creator-settings/creator-profile"
+							startContent={<Icon name="user" className="size-5" />}>
 							Creator profile
 						</ListboxItem>
 						<ListboxItem key="6" href="" startContent={<Icon name="ai" className="size-5" />}>

@@ -22,7 +22,7 @@ export default function CreatorSettingsOptions() {
 				</ListboxItem>
 				<ListboxItem
 					key="2"
-					href=""
+					href="/creator/settings/creator-settings/creator-profile"
 					startContent={<Icon name="user" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Creator profile
