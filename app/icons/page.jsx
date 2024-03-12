@@ -80,6 +80,9 @@ const icons = [
 	"arrow-left-circle",
 	"basket",
 	"card-plus",
+	"cloud-up",
+	"time",
+	"pencil-square",
 ];
 
 export default function Icons() {
