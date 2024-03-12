@@ -20,14 +20,14 @@ export default function CreatorSettingsAccountOptions() {
 					Account Info
 				</ListboxItem>
 				<ListboxItem
-					key="1"
+					key="2"
 					href="/settings/account"
 					startContent={<Icon name="folder-lock" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Password and security
 				</ListboxItem>
 				<ListboxItem
-					key="1"
+					key="3"
 					href="/settings/account"
 					startContent={<Icon name="trash" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>

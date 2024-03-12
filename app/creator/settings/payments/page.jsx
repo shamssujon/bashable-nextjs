@@ -6,7 +6,7 @@ export default function CreatorSettingsPaymentOptions() {
 	return (
 		<div className="mx-auto max-w-screen-sm">
 			<p className="mb-4 text-sm">
-				See information about your account, change password, learn about your account deactivation options.
+				Add or remove payment card manage your subscriptions or see the history of your transactions.
 			</p>
 
 			<Listbox
