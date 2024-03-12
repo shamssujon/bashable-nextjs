@@ -21,7 +21,7 @@ export default function CreatorSettingsAccountOptions() {
 				</ListboxItem>
 				<ListboxItem
 					key="2"
-					href="/creator/settings/password"
+					href="/creator/settings/password-and-security"
 					startContent={<Icon name="folder-lock" className="size-6" />}
 					endContent={<Icon name="arrow-right" className="size-6" />}>
 					Password and security

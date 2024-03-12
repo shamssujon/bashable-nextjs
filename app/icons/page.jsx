@@ -62,6 +62,7 @@ const icons = [
 	"star",
 	"dollar-cursor",
 	"eye",
+	"eye-slash",
 	"renewal",
 	"plus",
 	"plus-circle",

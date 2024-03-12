@@ -16,7 +16,7 @@ export default function CreatorSettingsLayout({ children }) {
 						</ListboxItem>
 						<ListboxItem
 							key="2"
-							href=""
+							href="/creator/settings/password-and-security"
 							startContent={<Icon name="vault" className="size-5" />}>
 							Password and security
 						</ListboxItem>
