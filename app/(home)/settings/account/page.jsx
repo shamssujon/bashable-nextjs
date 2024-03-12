@@ -47,7 +47,7 @@ export default function AccountSettings() {
 						fullWidth
 						color="danger"
 						variant="bordered"
-						startContent={<Icon name="trash" className="h-6 w-6" />}
+						startContent={<Icon name="trash-circle" className="h-6 w-6" />}
 						className="mt-4 h-auto py-3 text-lg font-semibold">
 						Delete my account
 					</Button>

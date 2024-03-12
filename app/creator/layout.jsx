@@ -95,7 +95,7 @@ export default function CreatorLayout({ children }) {
 						<div className="">
 							<Button
 								as={Link}
-								href={"/settings/account"}
+								href={"/creator/settings"}
 								fullWidth
 								startContent={<Icon name="settings" className="size-6" />}
 								className={`h-auto justify-start gap-3 py-3 text-xl font-semibold ${pathname === "/settings" ? "bg-neutral-200" : "bg-transparent"}`}>
@@ -131,12 +131,12 @@ export default function CreatorLayout({ children }) {
 					</div>
 
 					<div className="flex w-[350px] items-center justify-end gap-2">
-						<Button as={Link} href={"/message"} isIconOnly radius="full" className="bg-transparent">
+						<Button as={Link} href={"/creator/message"} isIconOnly radius="full" className="bg-transparent">
 							<Icon name="message" className="size-6" />
 						</Button>
 						<Button
 							as={Link}
-							href={"/notification/transaction"}
+							href={"/creator/notifications"}
 							isIconOnly
 							radius="full"
 							className="bg-transparent">
@@ -144,7 +144,7 @@ export default function CreatorLayout({ children }) {
 						</Button>
 						<Button
 							as={Link}
-							href={"/wallet-and-payments"}
+							href={"/creator/wallet-and-payments"}
 							isIconOnly
 							radius="full"
 							className="bg-transparent">
@@ -199,7 +199,7 @@ export default function CreatorLayout({ children }) {
 								</DropdownItem>
 								<DropdownItem
 									key="lists"
-									href="/creator/lists"
+									href="/creator/list"
 									startContent={<Icon name="document-list" className="h-4 w-4" />}>
 									Lists
 								</DropdownItem>
@@ -263,19 +263,28 @@ export default function CreatorLayout({ children }) {
 				{/* mobile appbar */}
 				<div className="sticky bottom-0 z-50 px-3 py-2 lg:hidden">
 					<div className="flex items-center justify-between gap-2 rounded-xl bg-white px-5 py-2.5 shadow-[-2px_-2px_50px_0px_rgba(0,0,0,0.1)]">
-						<Button as={Link} href="/" isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/creator" isIconOnly className="bg-neutral-100">
 							<Icon name="home" className="size-6" />
 						</Button>
-						<Button as={Link} href="/notification/transaction" isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/creator/notifications" isIconOnly className="bg-neutral-100">
 							<Icon name="bell" className="size-6" />
 						</Button>
-						<Button as={Link} href="/discover/search" isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/creator/post/create" isIconOnly className="bg-neutral-100">
 							<Icon name="plus" className="size-5" />
 						</Button>
-						<Button as={Link} href="/message" isIconOnly className="bg-neutral-100">
+						<Button as={Link} href="/creator/message" isIconOnly className="bg-neutral-100">
 							<Icon name="message" className="size-6" />
 						</Button>
+						<Button
+							as={Link}
+							href="/creator/user/options"
+							isIconOnly
+							radius="lg"
+							className="ml-2 bg-transparent">
+							<Avatar radius="lg" src="https://i.pravatar.cc/150?img=36" />
+						</Button>
 
+						{/* 
 						<Dropdown showArrow placement="bottom-end">
 							<DropdownTrigger>
 								<Button isIconOnly radius="lg" className="ml-2 bg-transparent">
@@ -356,7 +365,7 @@ export default function CreatorLayout({ children }) {
 									Log out
 								</DropdownItem>
 							</DropdownMenu>
-						</Dropdown>
+						</Dropdown> */}
 					</div>
 				</div>
 			</div>
